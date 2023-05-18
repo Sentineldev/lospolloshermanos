@@ -137,7 +137,7 @@ export class SenderOrderEmail extends SenderOrder{
 
 
             await transporter.sendMail({
-                from:"Jesus Figuera",
+                from:orderData.nombre,
                 to:orderData.correo_electronico,
                 subject:"Pedido de Los Pollos Hermanos",
                 html: this.mailTemplate(orderData)
